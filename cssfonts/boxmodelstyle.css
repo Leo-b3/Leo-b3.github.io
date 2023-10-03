@@ -1,0 +1,17 @@
+body{background-color: rgb(243, 200, 200);}
+.one
+{
+    margin:40px;
+    background-color: rgb(241, 135, 135);
+}
+.two{
+    margin:20px;
+    padding:20px;
+    background-color: rgb(238, 53, 53);
+}
+.three{
+    margin:30px;
+    padding:30px;
+    border: 7px solid #22AABB;
+    background-color: rgb(185, 0, 0);
+}
