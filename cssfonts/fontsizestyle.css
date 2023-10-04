@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(195, 146, 240);
+}
+div{
+    background-image: linear-gradient(to top, rgb(33, 203, 255),rgb(159, 212, 255));
+    font-family:'Courier New', Courier, monospace
+    box-shadow: 5px 5px black;
+    margin: 2em;
+    padding: 1em;
+    width: 15em;
+    
+}
+.first{
+    font-size: small;
+}
+.second{
+    font-size: 1em;
+   
+}
+.third{
+    font-size: large;
+}
+.fourth{
+    font-size: larger;
+}
