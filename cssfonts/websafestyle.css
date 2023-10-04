@@ -4,6 +4,9 @@ body{
 div{
     background-image: linear-gradient(to top, blueviolet,rgb(195,146,240));
     box-shadow: 5px 0px black;
+    margin: 2em;
+    padding: 1em;
+    
 }
 span{
     font-weight: bold;
