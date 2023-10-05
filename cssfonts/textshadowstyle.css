@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fuggles&family=Signika+Negative:wght@300&display=swap');
+body{
+    background-color: rgb(159, 212, 255);
+}
+div{
+    background-image: linear-gradient(to top, rgb(33, 203, 255),rgb(159, 212, 255));
+    font-family:'Courier New', Courier, monospace;
+    box-shadow: 5px 5px black;
+    margin: 2em;
+    padding: 1em;
+    width: 15em;   
+}
+.first{
+    color: green;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 1px 1px 2px black, 0 0 20px blue, 0 0 7px darkblue;
+}
+.second{
+    font-family: 'Fuggles', cursive;
+    text-shadow: 4px 4px 4px #666666;
+   
+}
+.third{
+    color:coral;
+    font-family: 'Signika Negative', sans-serif;
+    text-shadow: 0 0 10px #00ff00;
+}

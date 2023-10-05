@@ -3,7 +3,7 @@ body{
 }
 div{
     background-image: linear-gradient(to top, rgb(33, 203, 255),rgb(159, 212, 255));
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', Courier, monospace;
     box-shadow: 5px 5px black;
     margin: 2em;
     padding: 1em;
