@@ -1,6 +1,7 @@
-@font-face  {
-        font-family:ristretto;
-        src: url(Ristretto.otf); }
+@font-face {
+    font-family:myRistretto;
+    src: url(Ristretto.otf);
+           }
 @font-face{
         font-family: Mayestica;
         src: url(Mayestica.otf)
@@ -18,8 +19,8 @@ width: 15em;
 
 }
 .first{
-font-family: ristretto, sans-serif;
-font-weight: bold;
+    font-family:myRistretto,sans-serif;
+
 }
 .second{
 font-family: Mayestica, sans-serif;
