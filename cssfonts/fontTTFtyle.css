@@ -1,12 +1,24 @@
+@font-face {
+            font-family:myRoboto;
+            src: url(Roboto-Regular.ttf);
+            font-family:MickeysMerryChristmas;
+            src: url(Mickeys\ Merry\ Christmas.ttf)
+            }
+    
 body{
-    background-color: rgb(255, 200, 200);
+    background-color: rgb(191, 255, 175);
 }
 div{
-    background-image: linear-gradient(to top, rgb(255, 100, 100),rgb(255, 200, 200));
+    background-image: linear-gradient(to top, rgb(9, 255, 0),rgb(191, 255, 175));
     box-shadow: 5px 5px black;
     margin: 2em;
     padding: 1em;
     width: 15em;
     
 }
-
+.first{
+    font-family: myRoboto, sans-serif;
+}
+.second{
+    font-family: MickeysMerryChristmas, sans-serif;
+}
