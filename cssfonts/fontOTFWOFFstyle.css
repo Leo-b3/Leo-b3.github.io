@@ -1,9 +1,10 @@
 @font-face  {
         font-family:ristretto;
-        src: url(Ristretto.otf); 
+        src: url(Ristretto.otf); }
+@font-face{
         font-family: Mayestica;
         src: url(Mayestica.otf)
-            }
+          }
 
 body{
 background-color: rgb(191, 255, 175);
