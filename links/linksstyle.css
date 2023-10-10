@@ -3,7 +3,7 @@ body{
 }
 p{
     font-size: 1em;
-    clear: left;
+    float: left;
     margin: 2em;
     font-family: 'Courier New', Courier, monospace;
 }
