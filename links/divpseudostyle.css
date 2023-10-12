@@ -16,7 +16,8 @@ div{
 }
 div:focus{
     background-color: blue;
-    border:5px solid white
+    border:5px solid white;
+    color:white;
 }
 div:hover{
     color:blue;
