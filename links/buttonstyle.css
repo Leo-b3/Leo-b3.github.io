@@ -12,8 +12,7 @@ a{
     margin-bottom: 1em;
 }
 .first{
-    border-left-style: ridge;
-    border-color: red;
+    border-left:5px ridge red;
 }
 .second{
     border-left-style: ridge;
