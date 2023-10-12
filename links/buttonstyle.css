@@ -7,18 +7,24 @@ a{
     height:1em;
     width:1em;
     background-color: grey;
+    text-align: center;
+    border: solid;
 }
 .first{
-    border-left-style: ridge red;
+    border-left-style: ridge;
+    border-color: red;
 }
 .second{
-    border-left-style: ridge yellow ;
+    border-left-style: ridge;
+    border-color: yellow;
 }
 .third{
-    border-left-style: ridge blue;
+    border-left-style: ridge;
+    border-color: blue;
 }
 .fourth{
-    border-left-style: ridge green;
+    border-left-style: ridge;
+    border-color: green;
 }
 a:hover{
     background-color: rgb(90, 90, 90);
