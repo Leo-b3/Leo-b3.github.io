@@ -12,6 +12,7 @@ div{
     border-radius: 30px;
     font-size: 5em;
     border: 5px solid white;
+    padding: 1em;
 }
 div:focus{
     background-color: blue;
