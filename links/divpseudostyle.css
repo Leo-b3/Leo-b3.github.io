@@ -15,6 +15,7 @@ div{
     width:5em;
     padding: 1em;
     margin: auto;
+    margin-bottom: 10px;
 }
 div:focus{
     background-color: blue;
