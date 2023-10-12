@@ -10,6 +10,7 @@ a{
     text-align: center;
     border: solid;
     border-radius: 10px;
+    margin-bottom: 1em;
 }
 .first{
     border-left-style: ridge;
