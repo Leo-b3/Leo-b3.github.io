@@ -9,7 +9,7 @@ a{
     background-color: grey;
     text-align: center;
     border: solid;
-    border-radius: 20%;
+    border-radius: 10px;
 }
 .first{
     border-left-style: ridge;
