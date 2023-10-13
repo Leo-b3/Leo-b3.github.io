@@ -2,7 +2,7 @@ body{
     background-color: rgb(11, 151, 11);
 }
 a{
-    font-size: 5em;
+    font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
     height:1em;
     width:2em;
@@ -14,7 +14,7 @@ a{
     margin-right: auto;
 }
 .first{
-    border-left:10px ridge red;
+    border-left: 10px ridge red;
 }
 .second{
     border-left: ridge 10px yellow;
