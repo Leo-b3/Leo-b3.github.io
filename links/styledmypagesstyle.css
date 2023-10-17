@@ -12,6 +12,7 @@ div{
     text-align:center;
 }
 a{
+    display: inline-block;
     font-size: 1em;
     font-family: 'Courier New', Courier, monospace;
     color: orange;
