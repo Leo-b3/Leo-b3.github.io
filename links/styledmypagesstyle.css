@@ -18,8 +18,8 @@ a{
     color: orange;
     border: 1px solid orange;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right:auto ;
+    margin-left: 0.5em;
+    margin-right:0.5em ;
     text-align: center;
     width: 8em;
     outline: none;
