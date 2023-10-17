@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(250, 250, 142);
+}
+div{
+    width:3em;
+    background-color: rgb(255, 230, 0);
+    float: left;
+    height:10em;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 5 5 5 black;
+}
+a{
+    font-size: 1em;
+    margin: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    color: orange;
+    border: 2px orange;
+    border-radius: 10px;
+}
+a:hover{
+    background-color: black;
+}
