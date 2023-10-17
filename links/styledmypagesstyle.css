@@ -18,9 +18,11 @@ a{
     color: orange;
     border: 1px solid orange;
     border-radius: 10px;
-    margin-left: 0.5em;
-    margin-right:0.5em ;
+    margin-left: 1em;
+    margin-right: 1em ;
     margin-bottom: 3px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     text-align: center;
     width: 8em;
     outline: none;
