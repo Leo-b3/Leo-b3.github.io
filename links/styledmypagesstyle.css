@@ -21,6 +21,8 @@ a{
     margin-right:auto ;
     text-align: center;
     width: 8em;
+    outline: none;
+    text-decoration: none;
     }
 a:hover{
     background-color: black;
