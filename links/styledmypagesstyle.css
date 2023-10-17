@@ -17,7 +17,8 @@ a{
     color: orange;
     border: 1px solid orange;
     border-radius: 10px;
-    margin:auto;
+    margin-left: auto;
+    margin-right:auto ;
     text-align: center;
     width: 8em;
     }
