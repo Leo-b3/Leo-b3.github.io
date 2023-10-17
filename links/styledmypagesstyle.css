@@ -21,6 +21,7 @@ a{
     margin-left: 5px;
     margin-top: 5px;
     padding: auto;
+    text-align: center;
     }
 a:hover{
     background-color: black;
