@@ -5,7 +5,7 @@ div{
     width:10em;
     background-color: rgb(255, 230, 0);
     float: left;
-    height:170em;
+    height:17em;
     padding: 5px;
     margin: 10px;
     box-shadow: 5 5 5 black;
@@ -15,7 +15,7 @@ a{
     margin: 2em;
     font-family: 'Courier New', Courier, monospace;
     color: orange;
-    border: 2px solid orange;
+    border: 1px solid orange;
     border-radius: 10px;
     margin-left: 5px;
     margin-left: 5px;
