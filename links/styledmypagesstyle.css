@@ -2,10 +2,10 @@ body{
     background-color: rgb(250, 250, 142);
 }
 div{
-    width:7em;
+    width:10em;
     background-color: rgb(255, 230, 0);
     float: left;
-    height:20em;
+    height:170em;
     padding: 5px;
     margin: 10px;
     box-shadow: 5 5 5 black;
