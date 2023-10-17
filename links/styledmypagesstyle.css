@@ -17,7 +17,9 @@ a{
     color: orange;
     border: 2px orange;
     border-radius: 10px;
-}
+    margin-left: 5px;
+    margin-left: 5px;
+    }
 a:hover{
     background-color: black;
 }
