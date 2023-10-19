@@ -9,6 +9,7 @@ div{
 figcaption{
     padding-left: 5px;
     padding-right: 5px;
+    text-align: center;
 }
 #f{
     border: 2px solid red;
