@@ -1,0 +1,21 @@
+body{
+    background-color: lightgreen;
+}
+div{
+    box-shadow: 5px 5px black;
+    margin:5px;
+
+}
+figcaption{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#f{
+    border: 1px solid red;
+}
+#s{
+    border: 1px solid green;
+}
+#t{
+    border: 1px solid blue;
+}
