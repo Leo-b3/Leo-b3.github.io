@@ -15,4 +15,6 @@ td{
 }
 th{
     border-right:1px solid black;}
-    
+    tfoot{
+        color: blue;
+    }
