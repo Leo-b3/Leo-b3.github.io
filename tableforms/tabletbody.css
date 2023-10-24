@@ -4,4 +4,10 @@ box-shadow: 5px 5px black;
 }
 caption{
     caption-side: top;
+    font-family: 'Courier New', Courier, monospace;
+}
+td{
+    border: 1px solid black;
+    padding-left: 2em;
+    padding-top: 1em;
 }
