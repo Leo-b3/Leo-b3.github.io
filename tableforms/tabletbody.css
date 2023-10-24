@@ -14,10 +14,13 @@ td{
       text-align:center;
 }
 th{
-    border-right:1px solid black;}
-    tfoot{
+    border-right:1px solid black;
+border-left: 1px;
+}
+tfoot{
         color: blue;
     }
-    thead{
+thead{
         color: red;
     }
+
