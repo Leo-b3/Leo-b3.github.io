@@ -23,4 +23,7 @@ tfoot{
 thead{
         color: red;
     }
+    body{
+        background-color: lightgreen;
+    }
 
