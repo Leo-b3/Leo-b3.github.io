@@ -9,6 +9,8 @@ table{
 }
 .table{
     box-shadow: 5px 5px black;
+    height:30em;
+    width:20em;
 }
 .thead{
     color: violet;
@@ -26,4 +28,8 @@ table{
 .tfoot{
     color: yellow;
 }
+.td{
+    padding: 2em;
 
+    
+}
