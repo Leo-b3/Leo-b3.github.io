@@ -30,8 +30,7 @@ table{
 }
 .td{
     padding: 2em;
-
-    
+    width:10em;
 }
 body{
     background-color: rgb(220, 255, 185);
