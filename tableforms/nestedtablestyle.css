@@ -5,12 +5,12 @@ td{
 table{
     border: 2px solid blue;
     border-spacing: 0px;
+    width:19em;
+    
 
 }
 .table{
     box-shadow: 5px 5px black;
-    height:20em;
-    width:20em;
 }
 .thead{
     color: violet;
@@ -34,10 +34,9 @@ body{
     background-color: rgb(220, 255, 185);
 }
 .nestedtable{
-    margin-top: 5em;
-    margin-left: 1em ;
-    margin-right:1em ;
-    height: 15em;
-    width:10em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    margin-left: 1em;
+    margin-right:1em;
 }
 .th
