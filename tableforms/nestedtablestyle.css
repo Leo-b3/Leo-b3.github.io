@@ -38,4 +38,6 @@ body{
 }
 .nestedtable{
     margin: 3em;
+    height: 5em;
+    width:5em;
 }
