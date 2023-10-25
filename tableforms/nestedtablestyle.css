@@ -14,8 +14,8 @@ table{
 }
 .thead{
     color: violet;
-    border-right:1px solid lightgreen;
-    border-left: 1px solid lightgreen;
+    border-right:2px solid lightgreen;
+    border-left: 2px solid lightgreen;
     border-bottom: 1px solid green;
     text-align: center;
 }
