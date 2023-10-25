@@ -14,8 +14,6 @@ table{
 }
 .thead{
     color: violet;
-    border-right:2px solid lightgreen;
-    border-left: 2px solid lightgreen;
     border-bottom: 1px solid green;
     text-align: center;
 }
@@ -42,3 +40,4 @@ body{
     height: 15em;
     width:10em;
 }
+.th
