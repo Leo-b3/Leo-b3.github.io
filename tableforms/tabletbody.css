@@ -22,6 +22,7 @@ th{
     }
 tfoot{
         color: blue;
+        padding:0.5px;
     }
 thead{
         color: red;
