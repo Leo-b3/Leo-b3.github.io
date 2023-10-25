@@ -1,0 +1,29 @@
+td{
+    border: 1px solid green;
+    text-align: center;
+}
+table{
+    border: 2px solid blue;
+    border-spacing: 0px;
+
+}
+.table{
+    box-shadow: 5px 5px black;
+}
+.thead{
+    color: violet;
+    border-right:1px solid lightgreen;
+    border-left: 1px solid lightgreen;
+    border-bottom: 1px solid green;
+    text-align: center;
+}
+.nestedhead{
+    color: red;
+}
+.nestedfoot{
+    color: blue;
+}
+.tfoot{
+    color: yellow;
+}
+
