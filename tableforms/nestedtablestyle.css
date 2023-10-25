@@ -9,7 +9,7 @@ table{
 }
 .table{
     box-shadow: 5px 5px black;
-    height:30em;
+    height:20em;
     width:20em;
 }
 .thead{
@@ -35,4 +35,7 @@ table{
 }
 body{
     background-color: rgb(220, 255, 185);
+}
+.nestedtable{
+    margin: 3em;
 }
