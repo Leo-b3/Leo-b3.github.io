@@ -1,14 +1,19 @@
-td{
-    border: 1px solid green;
-    text-align: center;
+caption{
+    font-style: italic;
 }
+
 table{
     border: 2px solid blue;
     border-spacing: 0px;
     width:19em;
-    
-
 }
+
+td,th{
+    padding: 0.7em;
+    border: 1px solid green;
+    text-align: center;
+}
+
 .table{
     box-shadow: 5px 5px black;
 }
@@ -24,12 +29,9 @@ table{
     color: blue;
 }
 .tfoot{
-    color: yellow;
+    color: orange;
 }
-.td{
-    padding: 2em;
-    width:10em;
-}
+
 body{
     background-color: rgb(220, 255, 185);
 }
