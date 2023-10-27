@@ -16,3 +16,6 @@ legend{
 input{
     margin: 2em;
 }
+fieldset{
+    width: 30em;
+}
