@@ -12,3 +12,6 @@ legend{
     color:purple;
     background-color: rgb(216, 112, 135);
 }
+input{
+    margin: 2em;
+}
