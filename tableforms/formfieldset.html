@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fieldset</title>
+        <meta charset ="utf-8">
+        <link href="formfieldsetstyle.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <fieldset>
+            <legend>Login</legend>
+            <p> 
+                <label for="Username">Username:*</label>
+                <input type="text" name="Username">
+
+                <label for="Password">Password</label>
+                <input type="text" name="Password">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Gender*</legend>
+            <p>
+                <label for="gender">Male</label>
+                <input type="radio" name="Male">
+
+                <label for="gender">Female</label>
+                <input type="radio" name="Female">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Programing skill</legend>
+            <p>
+                <label for="java">Java</label>
+                <input type="checkbox" name="java">
+
+                <label for="C++">C++</label>
+                <input type="checkbox" name="C++">
+
+                <label for="C#">C#</label>
+                <input type="checkbox" name="C#">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Fruit</legend>
+            <label for="fruit">chose a fruit:</label>
+            <select>
+                <option>Banana</option>
+                <option>Apple</option>
+                <option>Orange</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Comment</legend>
+            <textarea>Enter your comment here</textarea>
+        </fieldset>
+    </body>
+</html>
