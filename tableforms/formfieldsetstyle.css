@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(182, 238, 144)55, 196);
+}
+p{
+    width: 20em;
+}
+label{
+    display: inline-block;
+    color: blue;
+}
+legend{
+    color:purple;
+    background-color: rgb(216, 112, 135);
+}
