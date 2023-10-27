@@ -3,9 +3,13 @@ input{
 label{
     display:inline-block;
     margin-bottom:3em;
+    color: blue;
     }
 p{
     width:20em;
-    
+
     }
+body{
+    background-color: rgb(171, 255, 171);
+}
     
