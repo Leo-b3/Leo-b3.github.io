@@ -11,6 +11,7 @@ label{
 legend{
     color:purple;
     background-color: rgb(216, 112, 135);
+    width: 15em;
 }
 input{
     margin: 2em;
