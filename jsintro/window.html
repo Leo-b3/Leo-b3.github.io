@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Window</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+        window.onload= function() {
+                alert("webbsidan är laddat ");
+                
+            }
+            window.onbeforeunload = function (event) {
+                event.preventDefault();
+                return (event.ReturnValue == "");
+            }
+            </script>
+            
+    </body>
+</html>
