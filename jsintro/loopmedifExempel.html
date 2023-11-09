@@ -6,11 +6,14 @@
     </head>
     <body>
         <label for="Number">Enter number(number>0):</label>
-        <input type="number" id="number">
+        <input type="number" id="number" onchange="test()">
         <p id="text"></p>
         <script>
-		if(document.getElementById(number).value < 0){
-        document.getElementbyId(text).innerHTML= "error";}
+            function test(){ 
+                var n = document.getElementById("number").value
+		        if(n < 0){
+                document.getElementById("text").innerHTML= "error";}
+                }
         </script>
     </body>
 </html>
