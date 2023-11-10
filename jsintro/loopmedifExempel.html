@@ -4,16 +4,42 @@
         <title>LoopMedIf</title>
         <meta charset="UTF-8">
     </head>
-    <body>
+    <body>338r8476475
         <label for="Number">Enter number(number>0):</label>
-        <input type="number" id="number" onchange="test()">
-        <p id="text"></p>
-        <script>
-            function test(){ 
-                var n = document.getElementById("number").value
-		        if(n < 0){
-                document.getElementById("text").innerHTML= "error";}
-                }
-        </script>
+        <input type="number" id="number" onchange="sum()">
+        <p id = "text"></p>
+        <p id = "text2"></p>
+
+          <script>
+        function sum()
+        { 
+            var n = parseInt(document.getElementById("number").value);
+            var i = 0
+            var summa = 0;
+            var j = 0;
+            var summa2 = 0;
+            
+            for(n > 0;i<n+1;i++){
+                summa += i;
+               
+             } 
+             document.getElementById("text").innerHTML = summa;
+             
+             if(n > 0){
+             while(j < n + 1){
+             summa2 += j;
+             }
+             }
+             document.getElementById("text2").innerHTML = summa2;
+             
+             
+           if(n < 0)
+            {
+                document.getElementById(text).innerHTML= "error";
+                 }
+           
+            
+            }
+            </script>
     </body>
 </html>
