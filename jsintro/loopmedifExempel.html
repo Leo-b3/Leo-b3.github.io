@@ -3,43 +3,55 @@
     <head>
         <title>LoopMedIf</title>
         <meta charset="UTF-8">
+        <style>
+        p{
+          color:red;
+        }
+        </style>
     </head>
-    <body>338r8476475
+    <body>
         <label for="Number">Enter number(number>0):</label>
-        <input type="number" id="number" onchange="sum()">
+        <input type="number" id="number" onchange="sum()">    
         <p id = "text"></p>
         <p id = "text2"></p>
-
-          <script>
-        function sum()
-        { 
+        
+        <script>
+            
+		function sum()
+     { 
             var n = parseInt(document.getElementById("number").value);
             var i = 0
-            var summa = 0;
             var j = 0;
+            var summa = 0;
             var summa2 = 0;
             
-            for(n > 0;i<n+1;i++){
+            for(n > 0;i<n+1;i++)
+        {
                 summa += i;
-               
-             } 
-             document.getElementById("text").innerHTML = summa;
+               document.getElementById("text").innerHTML = "Summering med for loop: " + summa;
+        } 
              
-             if(n > 0){
-             while(j < n + 1){
+             
+             if(n > 0)
+        {
+             while(j < n + 1)
+        {
              summa2 += j;
-             }
-             }
-             document.getElementById("text2").innerHTML = summa2;
+             j++;
+             document.getElementById("text2").innerHTML = "Summering med while loop: " + summa2;
+        }
              
              
-           if(n < 0)
-            {
-                document.getElementById(text).innerHTML= "error";
-                 }
+        }
+             
+           if(n < 1)
+        {
+                document.getElementById("text").innerHTML = "Error, number > 0!";
+                document.getElementById("text2").innerHTML = "";
+        }
            
             
-            }
-            </script>
+    }
+        </script>
     </body>
 </html>
