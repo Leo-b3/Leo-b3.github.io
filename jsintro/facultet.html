@@ -1,4 +1,4 @@
-<!DOCT<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>LoopMedIf</title>
@@ -6,6 +6,7 @@
 
     </head>
     <body onload="inmatningFakultet()">
+        <h1 id="num"></h1>
     <script>
     	function factorial(x) {
             // om input argument är invalid , kasta en undantag!  if (x < 0) throw new Error("x must not be negative");
@@ -25,6 +26,7 @@
 }
         catch (ex) { // om inmatning är inte valid då denna del exekveras  
         alert(ex); // säger vad felet är
+        document.getElementById(num).innerHTML = n + "! = " + f;
 }
 }
 
