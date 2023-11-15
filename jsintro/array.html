@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array</title>
+    <meta charset="utf-8">
+    var text="";
+var cities=["Dubai","Paris","Mumbai","Dallas","Houston","Madrid"];
+
+function skrift(item, index) {
+  text += "cities["+index+"] = " + item + "<br>";
+}
+
+for(var i= 0;i<3;i++){
+  var stad= prompt("Question shown","default text");
+	cities.push(stad);
+}
+
+document.write("After push<br>")
+cities.forEach(skrift);
+document.write(text + "<br>");
+
+var text="";
+
+cities.pop();
+cities.forEach(skrift);
+document.write("After pop<br>")
+document.write(text + "<br>");
+
+var text="";
+cities.shift();
+cities.forEach(skrift);
+document.write("after shift <br>");
+document.write(text + "<br>");
+
+var text="";
+cities.splice(2,0,"Stockholm");
+cities.forEach(skrift);
+document.write("after splice <br>")
+document.write(text + "<br>");
+  </head>
+  <body>
+
+  </body>
+</html>
