@@ -3,7 +3,8 @@
   <head>
     <title>Array</title>
     <meta charset="utf-8">
-    var text="";
+    <script>
+          var text="";
 var cities=["Dubai","Paris","Mumbai","Dallas","Houston","Madrid"];
 
 function skrift(item, index) {
@@ -37,6 +38,19 @@ cities.splice(2,0,"Stockholm");
 cities.forEach(skrift);
 document.write("after splice <br>")
 document.write(text + "<br>");
+
+var text="";
+delete cities[2];
+cities.forEach(skrift);
+document.write("after delete <br>");
+document.write(text + "<br>");
+
+document.write("index of dallas is 3 <br>")
+document.write("first city is " + cities[0] + "<br>");
+document.write("size of cities is " +  cities.length + "<br>");
+cities.length = 1;
+document.write("size of cities is now " + cities.length + "<br>");
+    </script>
   </head>
   <body>
 
