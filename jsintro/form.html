@@ -1,0 +1,53 @@
+
+<script>
+function utskrift(){
+    alert(document.getElementById("text").value);
+    document.getElementById("text").value="";
+    }
+    function japan(){
+    alert("MoshiMoshi");
+    }
+    function indien(){
+    alert("Namaste")
+    }
+    function kina(){
+    alert("Ni hao");
+    }
+    document.getElementById("4").style.background="lightblue";
+    document.getElementById("1").style.background="lightblue";
+    document.getElementById("2").style.background="lightblue";
+    document.getElementById("3").style.background="lightblue";
+    
+    function color(){
+    document.getElementById("stad").style.background="lightblue";
+    }
+</script>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forms</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form id=form1>
+    <label>Exempel:</label>
+    <input type ="text" id="text">
+    <br>
+    <br>
+    <input type="button" value="Skriv ut exempelfield värde" onclick="utskrift()" id="4">
+    </form>
+    <p>Hej i olika länder</p>
+    
+ 
+    <input type="button" value="Japan" onclick="japan()" id ="1" >
+    <input type="button" value="Indien" onclick="indien()" id ="2">
+    <input type="button" value="Kina" onclick="kina()" id ="3">
+    
+    <form>
+    <label>Namn</label>
+    <input type="text" id="namn" onblur="">
+    <label>Stad</label>
+    <input type="text" id="stad" onblur="" onfocus="color()">
+    </form>
+  </body>
+</html>
