@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Forms</title>
@@ -28,7 +28,7 @@
           function color1(){
           document.getElementById("namn").style.background="lightblue";
           }
-          function blur(){
+          function blur1(){
             document.getElementById("namn").style.background="white";
             document.getElementById("stad").style.background="white";
           }
@@ -49,12 +49,13 @@
     <input type="button" value="Japan" onclick="japan()" id ="1" >
     <input type="button" value="Indien" onclick="indien()" id ="2">
     <input type="button" value="Kina" onclick="kina()" id ="3">
-    
+  <br>
+  <br>
     <form>
     <label>Namn</label>
-    <input type="text" id="namn" onblur="blur()" onfocus="color1()">
+    <input type="text" id="namn" onblur="blur1()" onfocus="color1()">
     <label>Stad</label>
-    <input type="text" id="stad" onblur="blur()" onfocus="color()">
+    <input type="text" id="stad" onblur="blur1()" onfocus="color()">
     </form>
   </body>
 </html>
