@@ -1,32 +1,39 @@
-
-<script>
-function utskrift(){
-    alert(document.getElementById("text").value);
-    document.getElementById("text").value="";
-    }
-    function japan(){
-    alert("MoshiMoshi");
-    }
-    function indien(){
-    alert("Namaste")
-    }
-    function kina(){
-    alert("Ni hao");
-    }
-    document.getElementById("4").style.background="lightblue";
-    document.getElementById("1").style.background="lightblue";
-    document.getElementById("2").style.background="lightblue";
-    document.getElementById("3").style.background="lightblue";
-    
-    function color(){
-    document.getElementById("stad").style.background="lightblue";
-    }
-</script>    
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <title>Forms</title>
     <meta charset="utf-8">
+    <script>
+      function utskrift(){
+          alert(document.getElementById("text").value);
+          document.getElementById("text").value="";
+          }
+          function japan(){
+          alert("MoshiMoshi");
+          }
+          function indien(){
+          alert("Namaste")
+          }
+          function kina(){
+          alert("Ni hao");
+          }
+          document.getElementById("4").style.background="lightblue";
+          document.getElementById("1").style.background="lightblue";
+          document.getElementById("2").style.background="lightblue";
+          document.getElementById("3").style.background="lightblue";
+          
+          function color(){
+          document.getElementById("stad").style.background="lightblue";
+          }
+          function color1(){
+          document.getElementById("namn").style.background="lightblue";
+          }
+          function blur(){
+            document.getElementById("namn").style.background="white";
+            document.getElementById("stad").style.background="white";
+          }
+      </script>  
+
   </head>
   <body>
     <form id=form1>
@@ -45,9 +52,9 @@ function utskrift(){
     
     <form>
     <label>Namn</label>
-    <input type="text" id="namn" onblur="">
+    <input type="text" id="namn" onblur="blur()" onfocus="color1()">
     <label>Stad</label>
-    <input type="text" id="stad" onblur="" onfocus="color()">
+    <input type="text" id="stad" onblur="blur()" onfocus="color()">
     </form>
   </body>
 </html>
