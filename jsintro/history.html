@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<title>History</title>
+    <style>
+        input
+        {
+            width: 210px;
+            height: 40px;
+            color: brown;
+            border: 2px solid rgb(196, 196, 196);
+            border-radius: 3px;
+            background-color: rgb(233, 235, 240);
+            font-size: 1.2em;
+            display: block;
+            margin: 20px;
+        }
+    </style>
+	<script>
+        let lengthR = window.history.length;
+        function lengthH(){
+            document.getElementById("demo").innerHTML = lengthR;
+        }
+	</script>
+</head>
+<body>
+    <form>
+        <input type="button" value="Tillbaka" onclick="history.back()">
+        <input type="button" value="Frammåt" onclick="history.forward()">
+        <input type="button" value="Gå" onclick="history.go()">
+        <input type="button" value="Längd" onclick="lengthH()">
+    </form>
+    <p>Number of URLs in history list:</p>
+    <p id="demo"></p>
+</body>
+</html>

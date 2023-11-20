@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<title>Radioform</title>
+    <style>
+        #b{
+            background-color: #ff9898;
+            color: white;
+        }
+    </style>
+	<script>
+        function bkground(col){
+            for(var i=0; i<col.color.length; i++){
+                if(col.color[i].checked){
+                    document.getElementById("b").style.backgroundColor=col.color[i].value
+                }
+            }
+        }
+        function bkgroundReset(){
+            document.getElementById("b").style.backgroundColor="#ff9898"
+        }
+	</script>
+</head>
+<body id="b">
+    <form name="col">
+        <h1>Selekt bakgrundsfärg?</h1>
+        <input type="radio" name="color" value="#fa3123">Röd<br>
+        <input type="radio" name="color" value="#fad323">Gul<br>
+        <input type="radio" name="color" value="#23faaf">Grön<br>
+        <input type="radio" name="color" value="#23a8fa">Blå<br>
+        <input type="radio" name="color" value="#ac1cff">Lila<br>
+        <input type="button" value="Selekt Färg" onclick="bkground(col)">
+        <input type="button" value="Återställ" onclick="bkgroundReset()">
+    </form>
+</body>
+</html>
