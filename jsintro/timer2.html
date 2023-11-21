@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>timer</title>
+        <style>
+input {
+    width: 10em;
+    height: 2em;
+    color: darkred;
+    border: 2px solid rgb(129, 129, 129);
+    border-radius: 3px;
+    background-color: rgb(224, 224, 224);
+    font-size: 1.2em;
+    display: block;
+    margin: 20px;
+}
+#box {
+    position: absolute;
+    background-color: yellow;
+    top: 300px;
+    height: 150px;
+    width: 150px;
+}
+        </style>
+        <script>
+            var Xpos = 0;
+            var myTimeout;
+            var myInterval;
+            function moveX(){
+                Xpos+=15;
+                var left = Xpos + "px";
+                document.getElementById("box").style.left=left;
+            }
+            function startInterval(){
+                myInterval= setInterval(moveX,500);
+            }
+            function startTimeout(){
+                myTimeout = setTimeout(moveX,500);
+            }
+            function cancelInt(){
+                clearInterval(myInterval);
+            }
+            function cancelTim(){
+                clearTimeout(myTimer);
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" value="Set Interval" onclick="startInterval()">
+            <input type="button" value="Set Timeout" onclick="startTimeout()">
+            <input type="button" value="Clear Timeout" onclick="cancelTim">
+            <input type="button" value="Clear Interval" onclick="cancelInt()">
+        </form>
+        <div id="box" style="left: 10px"></div>
+    </body>
+</html>
