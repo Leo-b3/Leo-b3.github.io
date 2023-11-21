@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang ="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>Tableformsprov</title>
+        <style>
+table{
+    border: 2px solid blue;
+    border-spacing:1px;
+    width:20em;
+    height:10em;
+}
+caption{
+    caption-side: top;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+td{
+    border: 1px solid green;
+      text-align:center;
+}
+th{
+    border:1px solid green;
+    text-align: center;
+    padding: 0.5em;
+    }
+tfoot{
+        color: green;
+        padding:0.5px;
+    }
+thead{
+        color: red;
+    }
+    body{
+        background-color: rgb(230, 255, 171);;
+    }
+
+
+
+p{
+    width: 20em;
+}
+label{
+    display: inline-block;
+    color: blue;
+    width:7em;
+    text-align:center;
+}
+legend{
+    color:blue;
+    background-color: rgb(255, 188, 202);
+    width: 15em;
+    background-color: lightgreen;
+}
+input{
+    margin: 1em;
+}
+fieldset{
+    width: 30em;
+}
+        </style>
+    </head>
+    <body>
+        <h1>formula</h1>
+        <table>
+            <caption>2023 driver standings</caption>
+            <thead>
+                <tr>
+                    <th>Pos</th>
+                    <th>Driver</th>
+                    <th>Nationality</th>
+                    <th>Car</th>
+                    <th>PTS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Verstappen</td>
+                    <td>NED</td>
+                    <td>Red Bull</td>
+                    <td>549</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Perez</td>
+                    <td>MEX</td>
+                    <td>Red Bull</td>
+                    <td>273</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hamilton</td>
+                    <td>GBR</td>
+                    <td>Mercedes</td>
+                    <td>232</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sainz</td>
+                    <td>ESP</td>
+                    <td>Ferrari</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Alonso</td>
+                    <td>ESP</td>
+                    <td>Aston Martin</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Norris</td>
+                    <td>GBR</td>
+                    <td>MCLaren</td>
+                    <td>195</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total drivers 6</td>
+                    <td>Total:1649</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <fieldset>
+            <legend>Name of driver</legend>
+            <p> 
+                <label for="drivername">First name:*</label>
+                <input type="text" name="name">
+
+                <label for="lastname">Last name* </label>
+                <input type="text" name="Password">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>car*</legend>
+            <p>
+                <label for="car">Red Bull</label>
+                <input type="radio" name="redbull">
+                <br>
+                <label for="car">Mercedes</label>
+                <input type="radio" name="mercedes">
+                <br>
+                <label for="car">Ferrari</label>
+                <input type="radio" name="ferrari">
+                <br>
+                <label for="car">Aston Martin</label>
+                <input type="radio" name="astonmartin">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Nationallity</legend>
+            <label for="Nationallity">chose a fruit:</label>
+            <select>
+                <option>NED</option>
+                <option>ESP</option>
+                <option>GBR </option>
+                <option>MEX</option>
+            </select>
+        </fieldset>
+    
+ 
+    </body>
+</html>
