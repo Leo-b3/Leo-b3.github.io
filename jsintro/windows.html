@@ -1,52 +1,52 @@
-
 <!DOCTYPE html>
-<html lang="sv">
-<head>
-	<meta charset="utf-8">
-	<title>Window</title>
-    <style>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>window</title>
+        <style>
         input{
-            height: 40px;
-            color: brown;
-            border: 2px solid rgb(196, 196, 196);
-            border-radius: 3px;
-            background-color: rgb(233, 235, 240);
-            font-size: 1.2em;
-            display: block;
-            margin: 15px;
+          display:inline-block;
+          margin:0.5em;
+          font-size:2em;
+          color:darkred;
         }
-        body{
-            color: brown;
-            margin-left: 20px;
-        }
-        #myWindow{
-            position: absolute;
-        }
-    </style>
-	<script>
-        var myWindow = "width=1050,height=400,left=100,top=100";
-        function newPopupWindow(){
-            myWindow = window.open("snowleopard.jpg", "Snowleopard", myWindow).focus();
-        }
-        function closePopupWindow(){
-            myWindow = window.close();
-        }
-        function movePopupWindow(){
-            myWindow = window.moveTo(250,0);
-        }
-        function resizePopupWindow(){
-            myWindow = window.resizeTo(900, 600);
-        }
-	</script>
-</head>
-<body>
-    <form>
-        <p>Tryck på någon knapp:</p>
-        <input type="button" value="Öppna popup fönster" onclick="newPopupWindow()">
-        <input type="button" value="Stäng popup fönster" onclick="closePopupWindow()">
-        <input type="button" value="Flytta popup fönster" onclick="movePopupWindow()">
-        <input type="button" value="Ändra popup fönstrets storlek" onclick="resizePopupWindow()">
-        <input type="button" value="Info om ¨parent¨ fönster" onclick="window.parent">
-    </form>
-</body>
+        </style>
+        <script>
+            const windowpop = "popup,width=1050,height=400,left=100,top=100";
+            let popupWindow = null;
+
+            function openWindow() {
+                popupWindow = window.open("snowleopard.jpg", "Snowleapard", windowpop);
+            }
+            function closeWindow() {
+                popupWindow?.close();
+                popupWindow = null;
+            }
+            function moveWindow() {
+                popupWindow?.moveTo(250,0);
+            }
+            function alterWindow() {
+                popupWindow?.resizeTo(700, 350);
+            }
+            function PopupInfo() {
+                let parent = popupWindow?.parent;
+                if (parent) {
+                    const result = document.getElementById("result");
+                    result.innerHTML = 
+                        `outerHeight: ${parent.outerHeight}<br>
+                         outerWidth: ${parent.outerWidth}<br>
+                         Screen width: ${parent.screen.width}`
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h4 style="margin-bottom:0">Press a button</h4>
+        <input type="button" value="Open Popup" onclick="openWindow()"><br>
+        <input type="button" value="Close Popup" onclick="closeWindow()"><br>
+        <input type="button" value="Move Popup" onclick="moveWindow()"><br>
+        <input type="button" value="Alter Size" onclick="alterWindow()"><br>
+        <input type="button" value="Info of 'parent' window" onclick="PopupInfo()"><br>
+        <div id="result"></div>
+    </body>
 </html>
