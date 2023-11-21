@@ -4,11 +4,13 @@
         <meta charset="utf-8">
         <title>Tableformsprov</title>
         <style>
-            table{
+table{
     border: 2px solid blue;
     border-spacing:1px;
     width:20em;
     height:10em;
+    clear:left;
+    float:left;
 }
 caption{
     caption-side: top;
@@ -57,20 +59,17 @@ input{
 }
 fieldset{
     width: 30em;
+  
 }
-#inp{
-  text-align:center;
-}
-#inp{
-  text-align:center;
-  }
 div{
-  text-align:center;
+  margin:auto;
+  width:60%;
 }
         </style>
     </head>
     <body>
         <h1>formula</h1>
+       
         <table>
             <caption>2023 driver standings</caption>
             <thead>
@@ -174,10 +173,16 @@ div{
                 <option>MEX</option>
             </select>
         </fieldset>
-        <input type="button" value="send" id="inp">
+        
+        </div>
+        
+        
+    <button style ="margin-left:50%">Send</button>
+    
+   
+  
     
     
-    </div>
  
     </body>
 </html>
