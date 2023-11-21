@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>javascriptprov</title>
+        <style>
+        label{
+  display:inline-block;
+  margin-right:4em;
+  width:5em;
+  font-weight:bold;
+  font-style:italic;
+  margin:1em;
+}
+.inp{
+  text-align:center;
+  width:4em;
+  background-color:cyan;
+  margin:1em;
+  }
+  input{
+    width:4em;
+  }
+        </style>
+        <script>
+        function add(){
+var x = Number(document.getElementById("num1").value);
+var i = Number(document.getElementById("num2").value);
+alert(x+i);
+}
+function sub(){
+var x = Number(document.getElementById("num1").value);
+var i = Number(document.getElementById("num2").value);
+alert(x-i);
+
+}
+function mult(){
+var x = Number(document.getElementById("num1").value);
+var i = Number(document.getElementById("num2").value);
+alert(x*i);
+
+}
+function divi(){
+var x = Number(document.getElementById("num1").value);
+var i = Number(document.getElementById("num2").value);
+alert(x/i);
+
+}
+        </script>
+    </head>
+    <body>
+        <label>Tal 1:</label>
+        <input type="text" id="num1">
+        <br>
+        <br>
+        <label>Tal 2:</label>
+        <input type="text" id="num2">
+        
+        <br>
+        <br>
+        <input type="button" value="+" onclick="add()" class="inp">
+        <input type="button" value="-" onclick="sub()" class="inp">
+        <input type="button" value="*" onclick="mult()" class="inp">
+        <input type="button" value="/" onclick="divi()" class="inp">
+    </body>
+</html>
