@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Flexbox</title>
+        <meta charset="utf-8">
+        <style>
+            .container{
+                display:flex;
+                flex-wrap: wrap;
+                flex: auto;
+                justify-content:space-between;
+                
+            }
+            .container > div{
+                background-color: yellow;
+                border: 1px solid black;
+                color: white;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 2em;
+                
+            }
+            .odd{
+              flex:10%;
+            }
+            .even{
+              flex:20%;
+            }
+            .second, .fifth, .eighth{
+              flex:40%;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+             <div class="odd">1</div>
+             <div class="even second">2</div>
+             <div class="odd">3</div>
+             <div class="even">4</div>
+             <div class="odd fifth">5</div>
+             <div class="even">6</div>
+             <div class="odd">7</div>
+             <div class="even eighth">8</div>
+             <div class="odd">9</div>
+             <div class="even">10</div>
+             </div>
+            
+    </body>
+</html>
