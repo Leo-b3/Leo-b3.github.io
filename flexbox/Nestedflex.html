@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexnested</title>
+        <meta charset="utf-8">
+        <style>
+          .wrapper{
+            display:flex;
+            flex-wrap: nowrap;
+            
+          }
+          .second{
+            display:flex;
+            flex-direction:column;
+          }
+          .second > div{
+            flex:1;
+            margin:3px;
+            border-radius:3px;
+            
+          }
+          .wrapper > div{
+            flex:1;
+            background-color:blue;
+            margin:10px;
+            text-align:center;
+            color:white;
+            border-radius:4px;
+          }
+          #green{
+            background-color:lightgreen;
+            color:black}
+            #red{
+              background-color:red;
+              color:black
+            }
+          
+        </style>
+        <body>
+            <div class="wrapper">
+              <div class="second">1
+                <div id="green">1a</div>
+                <div id="red">1b</div>
+              </div>
+              <div>2</div>
+              <div>3</div>
+          </div>
+          <div class="wrapper">
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+          </div>
+          <div class="wrapper">
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+          </div>    
+        </body>
+    </head>
+</html>
