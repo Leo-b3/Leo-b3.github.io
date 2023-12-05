@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flexbakery</title>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/din_embed_code.js" crossorigin="anonymous"></script>
+
+        <style>
+            #container{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            ul{
+                list-style-type: none;  
+                
+            }
+            li{
+                border: 1px solid white;
+                border-radius:10px ;
+                text-align: center;
+                margin:10px;
+                color: white;
+                font-size: 2em;
+                padding:5px;
+                text-transform:uppercase;
+            }
+            .bread{
+                background:  no-repeat url("croissants.jpg");
+                background-size: 100vw 18em;
+                height: 30em;
+
+            }
+            .first{ 
+                display: flex;
+                background-color: rgb(99, 45, 7);
+            }
+            .list ul{ 
+                display: flex;
+                justify-content: flex-start;
+            }
+            .list{
+                width:90%;
+            }
+            img{
+                width:10%;
+                align-items: center;
+            }
+
+        
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="first">
+                <div class="list">
+                <ul>
+                    <li>menu<i class="fa-solid fa-newspaper"></i></li>
+                    <li>news</li>
+                    <li>about</li>
+                    <li>contact</li>
+                </ul>
+                </div>
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="bread" style="text-align: center;"><h1>sdfsf</h1></div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
