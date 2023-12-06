@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexresponsive</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <style>
+            .wrapper{
+                display: flex;
+                flex-wrap:wrap ;
+            }
+            .header{
+              flex-basis:100%;
+              background-color:red;
+              order:0;
+              text-align:center;
+            }
+            .footer{
+              flex-basis:100%;
+              order:4;
+              background-color:lightgreen;
+              text-align:center;
+            }
+            .aside-1{
+              order:1;
+              background-color:yellow;
+              flex-basis:20%;
+              text-align:center;
+            }
+            .aside-2{
+              order:3;
+              background-color:pink;
+              flex-basis:20%;
+              text-align:center;
+            }
+            .main{
+              order:2;
+              flex-basis:60%;
+              background-color:cyan;
+              text-align:center;
+            }
+            @media screen and (min-width:0px) and (max-width:380px){
+              .wrapper{
+                flex-direction:column;
+              }
+              .aside-1{
+                order:2
+              }
+              }
+              @media screen and (min-width:380px) and (max-width:560px){
+                .main{
+                  flex-basis:100%;
+                  order:1;
+                }
+                .aside{
+                  flex-basis:50%
+                }
+                .aside-1{
+                  order:2
+                }
+              }
+            
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">Header</div>
+            <div class="main">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+              </div> 
+            <div class="footer">Footer</div>
+            <div class="aside aside-1">Aside 1</div>
+            <div class="aside aside-2">Aside 2</div>
+        </div>
+            
+    </body>
+</html>
