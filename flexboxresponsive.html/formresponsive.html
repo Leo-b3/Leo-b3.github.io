@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexresponsive</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <style>
+            .form-row {
+              display:flex;
+           justify-content:flex-end;
+            }
+
+            label{
+              flex:1;
+            
+            }
+         
+             .wrapper{
+              margin:0px;
+              padding:0px;
+            }
+           
+            @media screen and (min-width:0) and (max-width:400px){
+                          .form-row > input{
+                          flex:1;}
+                                }
+             @media screen and (min-width:400px) and (max-width:700px){
+                          .form-row > input{
+                          flex:2;}
+                        }
+              @media screen and (min-width:700px) and (max-width:950px){
+                .form-row > input{
+                          flex:3;}
+              }
+              @media screen and (min-width:950px) and (max-width:1200px){
+                .form-row > input{
+                          flex:4;}
+              }
+              @media screen and (min-width:1200px){
+                .form-row > input{
+                          flex:5;}
+              }
+              button{
+                border:2px solid red;
+                border-radius: 9px;
+                background-color:lightblue;
+                color:white;
+              }
+        </style>
+    </head>
+    <body style="background-color:lightgreen;">
+        <form>
+             <ul class="wrapper">
+              <li class="form-row">
+               <label for="name">Name:</label>
+               <input type="text" id="name">
+              </li>
+              <li class="form-row">
+               <label for="cityborn">City-born : </label>
+               <input type="text" id="cityborn">
+              </li>
+              <li class="form-row">
+               <label for="email">Email Address:</label>
+               <input type="email" id="email">
+              </li>
+              <li class="form-row">
+               <button type="submit">Submit:</button>
+              </li>
+             </ul>
+             </form>
+            
+    </body>
+</html>
