@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexresponsive</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <style>
+            .wrapper{
+                display:flex;
+                
+            }
+            @media screen and (min-width:0px) and (max-width:400px){
+            .wrapper{
+                flex-direction: column;
+            }
+            }
+            @media screen and (min-width:400px) and (max-width:900px){
+            .wrapper{
+                flex-direction: column;
+            }
+            .first .second{
+                flex-basis: 50%;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+               <img class="first"  src="foto1s.png">
+               <img class="second" src="foto2s.png">
+               <img class="third"  src="foto3s.png">
+               </div>
+    </body>
+</html>
