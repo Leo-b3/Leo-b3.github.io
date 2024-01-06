@@ -3,24 +3,64 @@
     <head>
         <title>exprov</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-        <style></style>
+        <style>
+            .pic{
+                background-image: no-repeat url(moretextformats/pic1.jpg);
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .first > div{
+                background-color: gray;
+                text-align: center;
+                flex: 2;
+                height:1em;
+                
+            }
+            .first{
+                display: flex;
+                flex-direction: row;
+                flex-basis: 100%;
+            }
+
+            div{
+                margin: 10px;
+            }
+            .main{
+                flex-basis: 100%;
+                box-shadow: green;
+            }
+            .pic{flex: 4;}
+            .busness{flex:6;
+            background-color: gray;
+            }
+            .second{
+                
+            }
+
+        </style>
         <script></script>
     </head>
     <body>
         <div id="container">
-            <div class="HOME">HOME</div>
-            <div class="ABOUT">ABOUT</div>
-            <div class="SERVICES">SERVICES</div>
-            <div class="CONTACT">CONTACT</div>
-
-            <img src="" alt="picture" onclick="backgrounchange()">
-            <div class="business"></div>
-
-            <div class="analytics">Analytics</div>
-            <div class="maketing">Maketing</div>
-            <div class="developement">Developement</div>
-            <div class="support">Support</div>
-
+            <div class ="first">
+                <div class="HOME">HOME</div>
+                <div class="ABOUT">ABOUT</div>
+                <div class="SERVICES">SERVICES</div>
+                <div class="CONTACT">CONTACT</div>
+            </div>
+            <div class="main">
+                <div class="pic"></div>
+                <div class="business"><h1>Your businnes on the web</h1><br>random text you shouldnt read<br></div>
+            </div>
+            <div class="second">
+                <div class="analytics">Analytics</div>
+                <div class="maketing">Maketing</div>
+                <div class="developement">Developement</div>
+                <div class="support">Support</div>
+            </div>
 
             <div class="field">
                 <form>
@@ -45,6 +85,7 @@
                         <input type="checkbox">
                     </fieldset>
                 </form>
+                <input type="button" value="send">
             </div>
         </div>
     </body>
