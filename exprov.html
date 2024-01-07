@@ -4,9 +4,6 @@
         <title>exprov</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
         <style>
-            .pic{
-                background-image: no-repeat url("/moretextformats/pic1.jpg");
-            }
             .container{
                 display: flex;
                 flex-direction: row;
@@ -29,11 +26,15 @@
                 margin: 10px;
             }
             .main{
+                display: flex;
                 flex-basis: 100%;
                 box-shadow: green;
                 background-color: grey;
             }
-            .pic{flex: 4;}
+            .pic{
+                flex: 4;
+                background-image: no-repeat url("/moretextformats/pic1.jpg");
+            }
             .busness{flex:6;
             background-color: gray;
             }
