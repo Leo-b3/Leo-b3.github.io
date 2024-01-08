@@ -4,22 +4,28 @@
         <title>exprov</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
         <style>
+        body{
+          background-color:blue;
+        }
             .container{
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
             }
             .first > div{
-                background-color: gray;
+                background-color: white;
                 text-align: center;
-                flex: 2;
-                height:4em;
+                padding:1em;
+                flex-basis:15%;
                 
             }
             .first{
                 display: flex;
                 flex-direction: row;
                 flex-basis: 100%;
+                justify-content:flex-end;
+                align-items:center;
+                
             }
 
             div{
@@ -29,23 +35,21 @@
                 display: flex;
                 flex-basis: 100%;
                 box-shadow: green;
-                background-color: grey;
+                background-color: white;
                 flex-direction: row;
                 height: 16em;
             }
             .pic{
-                flex-basis: 40%;
-                flex: 1;
+                flex-basis: 30%;
                 background: no-repeat url("pic1.jpg");
             }
             .business{
-                flex-basis: 60%;
-                flex:1;
-                background-color: gray;
+                flex-basis: 70%;
+                background-color: white;
                 text-align: center;
             }
             .second > div{
-                background-color: gray;
+                background-color: white;
                 text-align: center;
                 flex: 2;
                 height:8em;
@@ -60,10 +64,34 @@
                 display: flex;
                 flex-direction: row;
                 flex-basis: 100%;
+                justify-content:center;
+            }
+            fieldset > label{
+              display:inline-block;
+              padding:5px;
+              margin-right:0.5em;
+              margin-bottom:1em;
+              width:2em;
+            
+            }
+            .form{
+              background-color:white;
+              color:blue;
+              width:15em;
+              margin:10px;
+              height:15em;
             }
             fieldset{
-                align-items: center;
+              width:10em;
+              margin:auto;
+              margin-top:1em;
+  
             }
+            p{
+             text-align:center;
+             margin:0px;
+            }
+
         </style>
         <script></script>
     </head>
@@ -87,17 +115,17 @@
             </div>
 
             <div class="field">
-                <form>
+                <div class="form">
                     <fieldset>
                         <legend>Gender</legend>
                         <label for="1">male</label>
-                        <input type="radio" id="1">
+                        <input type="radio" name="1">
                         <br>
                         <label for="2">female</label>
-                        <input type="radio" id="2">
+                        <input type="radio" name="1">
                     </fieldset>
-                </form>
-                <form>
+                </div>
+                <div class="form">
                     <fieldset>
                         <legend>Programming skill</legend>
                         <label>Java</label>
@@ -109,9 +137,10 @@
                         <label>C#</label>
                         <input type="checkbox">
                     </fieldset>
-                </form>
-                <br>
-                <input type="button" value="send">
+                    <p>
+                    <input type="button" value="send"> </p>
+                </div>
+                
             </div>
         </div>
     </body>
