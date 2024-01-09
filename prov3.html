@@ -1,18 +1,191 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your business</title>
+    <title>Your business</title>'
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">'
+    <link rel="icon" type="image/x-icon" href="UKFlagIcon.png">
+    <script src="https://kit.fontawesome.com/eb3d58a5e7.js" crossorigin="anonymous"></script>
+    <style>
+    body{
+      background-color:rgb(104, 235, 137);
+    }
+#pic{
+    background: no-repeat url("pic1.jpg");
+    flex:1;
+}
+#but{
+  background-color:black;
+  color:white;
+  border-radius:10px;
+  padding:3px;
+}
+.container{
+  display:flex;
+  flex-wrap:wrap;
+}
+ul{
+  list-style-type: none;
+  }
+  #menu{
+    display:flex;
+    padding: 12px 0;
+    flex-basis: 100%;
+  }
+li{
+  background-color:  ;
+  text-transform:uppercase;
+  background-color:white;
+  margin:10px;
+  padding:1em;
+  text-align:center;
+  box-shadow: 5px 5px  rgb(199, 48, 98);
+}
+#home, #news{
+  flex:1;
+}
+#abo, #serv, #contact{
+  flex:2;
+}
+#blank{
+     box-shadow: transparent;
+     background-color: transparent;
+     opacity: 0;
+     flex:2
+}
+div{
+  margin:10px;
+  
+}
+#main{
+  box-shadow: 5px 5px solid blue;
+  display:flex;
+  background-color:white;
+  flex-basis:100%
+  
+}
+#maintext{
+  flex:2;
+  height:14em;
+}
+#third{
+  flex-basis:100%;
+}
+#thi{
+    display:flex;
+    padding: 12px 0;
+    flex-basis: 100%;
+}
+#thi > li{
+  flex 2;
+}
+#fourth{
+  flex-basis:100%;
+  display:flex;
+  flex-direction:row;
+}
+label{
+  color:blue;
+}
+@media screen and (min-width:650px) and (max-width:1200px){
+  #fourth{
+    display:none;
+  }
+  #home, #news{
+    flex-basis:50%;
+    flex:1;
+  }
+  #menu{
+    flex-direction:row;
+  }
+  #abo{
+    flex-basis:100%;
+    flex:1;
+  }
+  
+}
+@media screen and (max-width:650px){
+  #fourth{
+    display:none;
+  }
+#third{
+  display:flex;
+  flex-direction:column;
+}
+
+  
+}
+    </style>
 </head>
 <body>
 <div class="container">
     <ul id="menu">
-        <li id="home">home</li>
-        <li id="blank">news</li>
-        <li id="about"></li>
-        <li id="serv">about</li>
-        <li id="cont">services</li>
-        <li id="">contact</li>
+        <li id="home"><a>home</a></li>
+        <li id="news"><a>news</a></li>
+        <li id="blank"></li>
+        <li id="abo"><a>about</a></li>
+        <li id="serv"><a>services</a></li>
+        <li id="contact"><a>contact</a></li>
     </ul>
+        <div id="main">
+            <div id="pic" onclick="colorchange()"></div>
+            <div id="maintext">
+                    <h1>Your Business On The Web</h1>
+                    Lorem ipsum dolor sit amet<br><br>
+                    <button id="but">Read More</button>
+            </div> 
+            </div>
+            <div id="third">
+                <ul id="thi">
+                    <li class="statistics"><i class="fa-solid fa-chart-pie"></i><br>Analytics<br>Lorem ipsum dolor</li>
+                    <li class="statistics">
+                    <i class="fa-solid fa-rectangle-ad fa-rotate-270"></i><br>
+                    Marketing<br>Lorem ipsum dolor sit amet
+                    </li>
+                    <li class="statistics"><i class="fa-regular fa-window-maximize"></i><br>Devolopment<br>Lorem ipsum dolor sit amet</li>
+                    <li class="statistics"><i class="fa-solid fa-phone" style="color: #2afe43;"></i>
+                    <br>support<br>Lorem ipsum dolor sit amet</li>
+
+                </ul>
+           
+            
+            
+        </div>
+        <div id="fourth">
+            <div>
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend id="nam">Your name:</legend>
+                              <label for="firstname">Name:*</label><input type="text" name="firstname"><br>
+                              <label for="lastname">Last name:*</label><input type="text" name="lastname">
+                        </fieldset>
+                         <fieldset>
+                            <legend id="nationality">Namtionality</legend>
+                              <label for="firstname">Chose a nationality:*</label>
+                              <select>
+                              <option>SWE</option>
+                              <option>Ned</option>
+                              <option>GBR</option>
+                              <option>US</option>
+                              </select>
+                        </fieldset>
+                    </form>
+                </div>
+            </div><br>
+            <div id="skill">
+                <div id="skillbx">
+                    <form>
+                        <fieldset>
+                            <legend>Skills</legend>
+                            <label for="Skill">Electrician</label><input type="checkbox" name="Skill"><br>
+                            <label for="Skill">Baker</label><input type="checkbox" name="Skill"><br>
+                            <label for="Skill">Carpenter</label><input type="checkbox" name="Skill">
+                        </fieldset>
+                        <button id="button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 </div>
 </body>
 
