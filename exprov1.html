@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Your Business</title>
+        <link rel="icon" type="image/x-icon" href="UKFlagIcon.png">
+        <script src="https://kit.fontawesome.com/b96584f96b.js" crossorigin="anonymous">
+
+            function border() {
+                document.getElementById("home").style.border = "5px 5px solid yellow";
+
+                document.getElementById("about").style.border = "5px 5px solid cyan";
+                document.getElementById("serv").style.border = "5px 5px solid cyan";
+                document.getElementById("cont").style.border = "5px 5px solid cyan";
+            }
+        </script>
+
+        <style>
+
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+                background-color: blue;
+                justify-content: center;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            #menu {
+                padding: 12px 0;
+                flex-basis: 100%;
+                display: flex;
+            }
+            #menu > li {
+                flex: 1;
+                text-align: center;
+                margin: 0 10px;
+                padding: 12px 0;
+                text-transform: uppercase;
+                background-color: lightgray;
+                box-shadow: 5px 5px lightgreen;
+            }
+            #blank {
+                box-shadow: transparent;
+                background-color: transparent;
+                opacity: 0;
+            }
+
+            #more {
+                margin: 0 10px;
+                flex-basis: 100%;
+                display: flex;
+                box-shadow: 5px 5px lightgreen;
+            }
+            #pic {
+                padding: 55px 0;
+                flex: 1;
+                background-size: cover;
+                box-shadow: 5px 5px solid darkgreen;
+            }
+            #text {
+                padding-bottom: 110px;
+                flex: 2;
+                background-color: lightgray;
+            }
+            #subtext {
+                padding-left: 100px;
+                margin-top: 0px;
+            }
+            #subtext > h1 {
+                margin: 15px 0;
+            }
+            #subtext > button {
+                margin: 10px 0;
+                font-size: 1.2em;
+                color: white;
+                background-color: black;
+                border-radius: 15px;
+            }
+
+            #stats {
+                padding: 12px 0;
+                flex-basis: 100%;
+                display: flex;
+            }
+            #stats > li {
+                flex: 1;
+                text-align: center;
+                margin: 0 10px;
+                padding: 12px 0;
+                background-color: lightgray;
+                box-shadow: 5px 5px red;
+            }
+            i {
+                font-size: 2em;
+            }
+            form > button {
+                text-align: center;
+            }
+
+            #check {
+                display: flex;
+                justify-content: center;
+            }
+            fieldset {
+                margin: 0 10px;
+            }
+            label {
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+            legend {
+                background-color: lightgreen;
+            }
+
+            #gender {
+                padding: 30px 0;
+                margin: 0 10px;
+                background-color: lightgray;
+            }
+
+            #skill {
+                padding: 30px 0;
+                margin: 0 10px;
+                background-color: lightgray;
+            }
+            #but {
+                text-align: center;
+            }
+        
+            @media screen and (max-width: 750px) {
+                #menu {
+                    flex-direction: column;
+                }
+                #menu > li {
+                    flex-basis: 100%;
+                    margin: 5px 10px;
+                }
+                ul {
+                    margin-top: 0;
+                }
+                #blank {
+                    display: none;
+                }
+
+                #text {
+                    padding-bottom: 55px;
+                    order: 0;
+                    flex: 5;
+                }
+                #pic {
+                    padding: 25px;
+                    order: 1;
+                    flex: 6;
+                }
+                #subtext {
+                    padding: 10px;
+                }
+                
+                #check {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 450px) {
+                #menu {
+                    flex-direction: column;
+                }
+                #menu > li {
+                    flex-basis: 100%;
+                    margin: 5px 10px;
+                }
+                ul {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                #blank {
+                    display: none;
+                }
+                #about {
+                    order: 0;
+                }
+                #serv {
+                    order: 1;
+                }
+                #cont {
+                    order: 2;
+                }
+                #home {
+                    order: 3;
+                }
+
+                #more {
+                    display: none;
+                }
+
+                #stats {
+                    margin-top: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                #stats > li {
+                    text-align: center;
+                    margin: 8px 8px;
+                    flex-basis: 40%;
+                    padding: 60px 0;
+                }
+
+                #check {
+                    display: none;
+                }
+            }
+
+        </style>
+    </head>
+    <body id="container">
+        <ul id="menu">
+            <li id="home">home</li>
+            <li id="blank"></li>
+            <li id="about">about</li>
+            <li id="serv">services</li>
+            <li id="cont">contact</li>
+        </ul>
+        <div id="more">
+            <div id="pic" style="background-image: url(pic1.png);" onclick="border()"></div>
+            <div id="text">
+                <div id="subtext">
+                    <h1>Your Business On The Web</h1>
+                    Lorem ipsum dolor sit amet<br>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <ul id="stats">
+            <li><i class="fa-solid fa-chart-column"></i><br><h3>Analytics</h3><br>Lorem ipsum dolor sit amet</li>
+            <li><i class="fa-solid fa-bullhorn"></i><br><h3>Marketing</h3><br>Lorem ipsum dolor sit amet</li>
+            <li><i class="fa-solid fa-server"></i><br><h3>Development</h3><br>Lorem ipsum dolor sit amet</li>
+            <li><i class="fa-regular fa-address-card"></i><br><h3>Support</h3><br>Lorem ipsum dolor sit amet</li>
+        </ul>
+        <div id="check">
+            <div id="gender">
+                <div id="genderbx">
+                    <form>
+                        <fieldset>
+                            <legend>Gender*</legend>
+                            <label for="Gender" style="margin-right: 10px;">Male</label><input type="radio" name="Gender"><br>
+                            <label for="Gender">Female</label><input type="radio" name="Gender">
+                        </fieldset>
+                    </form>
+                </div>
+            </div><br>
+            <div id="skill">
+                <div id="skillbx">
+                    <form>
+                        <fieldset>
+                            <legend>Programming<br>Skill</legend>
+                            <label for="Skill">Java</label><input type="checkbox" name="Skill"><br>
+                            <label for="Skill">C++</label><input type="checkbox" name="Skill"><br>
+                            <label for="Skill">C#</label><input type="checkbox" name="Skill">
+                        </fieldset>
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
